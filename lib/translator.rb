@@ -6,8 +6,8 @@ def load_library(file_path)
   hash = {"get_meaning" => {}, "get_emoticon" => {}}
   library.each do |meaning, description|
     eng, jap = description
-     hash["get_meaning"][jap] = meaning
-     hash["get_emoticon"][eng] = jap
+    hash["get_meaning"][jap] = meaning
+    hash["get_emoticon"][eng] = jap
   end
   hash
 end
